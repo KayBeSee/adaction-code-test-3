@@ -19,8 +19,9 @@ describe('List component', () => {
 
     const renderedItems = screen.getAllByRole('item');
     expect(renderedItems[1].textContent).toEqual('2');
-    expect(renderedItems[2].textContent).toEqual('fizz');
+    expect(renderedItems[2].textContent).toEqual('lucky');
     expect(renderedItems[4].textContent).toEqual('buzz');
+    expect(renderedItems[5].textContent).toEqual('fizz');
     expect(renderedItems[14].textContent).toEqual('fizzbuzz');
   });
 }) 

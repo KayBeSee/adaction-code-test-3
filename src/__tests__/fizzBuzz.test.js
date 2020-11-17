@@ -13,7 +13,7 @@ describe('fizzBuzzer function', () => {
 
   test('it returns fizz for input % 3 === 0', () => {
     const result = fizzBuzzer(3);
-    expect(result).toEqual('fizz')
+    expect(result).toEqual('lucky')
   })
 
   test('it returns buzz for input % 5 === 0', () => {
@@ -24,5 +24,10 @@ describe('fizzBuzzer function', () => {
   test('it returns fizzbuzz for input % 3 === 0 && input % 5 === 0', () => {
     const result = fizzBuzzer(15);
     expect(result).toEqual('fizzbuzz')
+  })
+
+  test('it returns lucky if any digit in the number is a 3', () => {
+    const result = fizzBuzzer(13);
+    expect(result).toEqual('lucky')
   })
 })
