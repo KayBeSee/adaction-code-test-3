@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-import { Header, ItemList, AdjustRangeModal } from './components';
+import { Header, ItemList, AdjustRangeModal, ItemReport } from './components';
 
 import { blue900 } from './utils/colors';
 
@@ -20,6 +20,7 @@ function App() {
       <PageContainer>
         <Header setAdjustRangeModalOpen={setAdjustRangeModalOpen} />
         <ItemList items={numbers} />
+        <ItemReport items={numbers} />
       </PageContainer>
       <AdjustRangeModal
         maxItems={maxItems}
